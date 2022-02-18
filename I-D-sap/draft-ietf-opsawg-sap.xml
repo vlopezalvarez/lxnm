@@ -1439,13 +1439,15 @@ module ietf-sap-ntw {
       <t>Section 10 of <xref target="RFC4364"></xref> discuses several option
       to extend the scope of a VPN service beyond the scope of a single
       Autonomous System (AS). For illustration purposes, this section focuses
-      on the so called "option a" but similar examples can be considered for
-      other options.</t>
+      on the so called "Option A" but similar examples can be considered for
+      other options. </t>
 
-      <t>A PE in an AS attaches directly to a PE in a peer AS. These two PEs
-      are attached by multiple sub-interfaces, at least one for each of the
-      VPNs whose routes need to be passed from AS to AS. Each PE treats the
-      other as if it were a CE.</t>
+      <t>A ASBR of one AS is directly connected to ASBR of the neighboring AS.
+      The ASBRs are connected by multiple logical or physical interfaces. For 
+      this example, the two ASBRs are attached by multiple sub-interfaces. At 
+      least, one of the VPNs requires to pass the routes from one AS to the 
+      other AS. Each ASBR behaves as a PE and treats the other as if it were a 
+      CE.</t>
 
       <t><xref target="optiona"></xref> shows a simplified (excerpt) topology
       of two ASes A and B with a focus on the interconnection links between
